@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #2abec7;
+    
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.nav h2{
+    font-size: 2rem;
+}
+
+.user-input{
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input{
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.user-input input:focus{
+    box-shadow: 0 0 5px #2abec7;
+    border: 1px solid #2abec7;
+}
+
+.user-input button{
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background: lightgray;
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user-input button:hover{
+    background: transparent;
+    color: white;
+}
+
+.to-do-items{
+    width: 500px;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.item{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    justify-self: normal;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    flex-grow: 1;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.item label {
+    /* Styles for the deadline label */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    justify-content: end;
+  }
+  
+  .item input[type="date"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1px;
+    padding: 1px;
+    justify-content: end;
+  }
